@@ -4,7 +4,7 @@ namespace PHPFacile\Openstreetmap\Service;
 use PHPFacile\Openstreetmap\Model\OverpassResponse;
 use GuzzleHttp\Client as Httpclient;
 
-class OpenstreetmapService
+class OpenstreetmapService implements OpenstreetmapServiceInterface
 {
     /**
      * Query the overpass API and retrieve an OSM relation identified by its id
