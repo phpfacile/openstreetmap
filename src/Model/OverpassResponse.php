@@ -132,6 +132,8 @@ class OverpassResponse
 
             // Ok... let's free a little bit of memory
             unset($this->response['elements'][$elementIdx]['tags']['addr:postcode']);
+        } else {
+            $this->postalCodes[$elementIdx] = null;
         }
 
         return $this->postalCodes[$elementIdx];
